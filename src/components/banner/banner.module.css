@@ -1,0 +1,160 @@
+.bannerMain {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+    object-fit: cover;
+    z-index: 100;
+}
+
+.bannerHeader {
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    transform: translate(0, 30%);
+    width: 90%;
+    background-color: transparent;
+    z-index: 500;
+}
+
+.headingLargeWhite {
+    width: auto;
+    /* min-height: 50px; */
+    text-align: left;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: .08em;
+    color: #fff;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.msg {
+    display: flex;
+    width: auto;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.animatedStrgs {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #ffb04c;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animatedStrgs.animate {
+    animation: animateText 0.2s ease forwards;
+}
+
+.headingSmallOrange {
+    font-size: 25px;
+    color: #ffb04c;
+    margin: 5px 2px;
+    /* margin-bottom: 5px; */
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.headingExtraSmallOrange {
+    font-size: 15px;
+    /* color: #ffb04c; */
+    color: white;
+    margin: 5px 2px;
+    /* margin-bottom: 5px; */
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.subHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.headingWhiteExtraSmall {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+
+@keyframes animateText {
+    0% {
+        opacity: 0;
+        left: -10px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 767px) {
+    .headingLargeWhite {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .headingLargeWhite {
+        font-size: 40px;
+        line-height: 70px;
+    }
+
+    .msg {
+        height: 40px;
+    }
+
+    .animatedStrgs {
+        height: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .bannerHeader {
+        bottom: 15%;
+        transform: translate(0, 15%);
+    }
+    .headingLargeWhite {
+        line-height: 55px;
+        margin: 30px 0;
+    }
+
+    .subHeader {
+        margin-top: 30px;
+    }
+
+    .headingWhiteExtraSmall {
+        margin: 8px 0;
+    }
+}

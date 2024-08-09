@@ -1,0 +1,120 @@
+.container {
+    width: 100%;
+    padding: 100px 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.leftItem {
+    width: 45%;
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rightItem {
+    position: relative;
+    width: 45%;
+}
+
+.content2Bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ceoContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 0);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ceo {
+    width: 100%;
+}
+
+.ceoContainer.init {
+    animation: init 2s ease forwards;
+}
+
+.ceoContainer.init.loop {
+    animation: loop 10s ease infinite;
+}
+
+@keyframes init {
+    100% {
+        transform: translate(-10%, 0);
+    }
+}
+
+@keyframes loop {
+    0% {
+        transform: translate(-10%, 0);
+    }
+    
+    50% {
+        transform: translate(-15%, 0%);
+    }
+
+    100% {
+        transform: translate(-10%, 0);
+    }
+}
+
+.textWhiteSmall {
+    font-size: 15px;
+    color: white;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.signature {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin: 20px 0;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        padding: 200px 10px;
+        flex-direction: column-reverse;
+    }
+
+    .leftItem {
+        width: 100%;
+    }
+
+    .rightItem {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 150px 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 100px 10px;
+    }
+}
