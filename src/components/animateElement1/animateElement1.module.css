@@ -1,7 +1,25 @@
+.wrapper {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.headerLargeWhite {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+}
+
 .container {
     position: relative;
     width: 100%;
-    max-width: 1400px;
     height: 400px;
     margin: 50px auto;
     display: flex;
@@ -62,9 +80,10 @@
 }
 
 @media (max-width: 767px) {
-    .container {
+    .wrapper {
         margin: 20px auto;
     }
+    
     .leftItem, .rightItem {
         width: 200px;
         height: 300px;

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from './content2.module.css';
-import bg from '../../assets/images/content2/content2_bg.png';
-import ceo from '../../assets/images/content2/ceo.png';
+import bg from '../../assets/images/content2/bg3.png';
+import ceo from '../../assets/images/logo/test.png';
 
 const Content2 = () => {
 

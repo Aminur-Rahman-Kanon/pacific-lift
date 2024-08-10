@@ -5,6 +5,11 @@ import parts from '../assets/images/our_services/parts.jpg';
 import planning from '../assets/images/our_services/planning.jpg';
 import renovation from '../assets/images/our_services/renovation.jpg';
 import supply from '../assets/images/our_services/supply.jpg';
+import project1 from '../assets/images/projects/1.jpg';
+import project2 from '../assets/images/projects/2.jpg';
+import project3 from '../assets/images/projects/3.jpg';
+import project4 from '../assets/images/projects/4.jpg';
+import project5 from '../assets/images/projects/5.jpg';
 
 export const content1Data = [
     [
@@ -80,5 +85,53 @@ export const services = [
         title: 'spare parts',
         text: 'High-quality and reliable spare parts available in our stock',
         img: parts
+    }
+]
+
+export const projects = [
+    {
+        id: 1,
+        title: 'assign horizon',
+        type: 'traction MR passenger lift',
+        capacity: '750 kg (10 person)',
+        stop: '10/10',
+        location: 'gulshan-1',
+        img: project1
+    },
+    {
+        id: 2,
+        title: 'assign nirvana',
+        type: 'traction MR passenger lift',
+        capacity: '630 kg (8 person)',
+        stop: '11/11',
+        location: 'banani',
+        img: project2
+    },
+    {
+        id: 3,
+        title: 'sunnydale school',
+        type: 'traction MR passenger lift',
+        capacity: '1250 kg (16 person)',
+        stop: '9/9',
+        location: 'bashundhara',
+        img: project3
+    },
+    {
+        id: 4,
+        title: 'awr melinda',
+        type: 'traction MR passenger lift',
+        capacity: '630 kg (8 person)',
+        stop: '12/12',
+        location: 'bashindhara',
+        img: project4
+    },
+    {
+        id: 5,
+        title: 'best shirt MD house',
+        type: 'hydraulic passenger lift',
+        capacity: '630 kg (8 person)',
+        stop: '4/4',
+        location: 'bashundhara',
+        img: project5
     }
 ]

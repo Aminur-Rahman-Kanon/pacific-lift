@@ -50,12 +50,15 @@ const AnimateElement1 = () => {
     }, [isVisible])
     
     return (
-        <div className={styles.container} id='animate-el' ref={animate}>
-            <div className={styles.leftItem}>
-                <img src={door1} alt="pacific lift" className={styles.leftImg}/>
-            </div>
-            <div className={styles.rightItem}>
-                <img src={door2} alt="pacific lift" className={styles.rightImg}/>
+        <div className={styles.wrapper}>
+            <h2 className={styles.headerLargeWhite}  ref={animate}>a brand that doesn't compromise safety</h2>
+            <div className={styles.container} id='animate-el'>
+                <div className={styles.leftItem}>
+                    <img src={door1} alt="pacific lift" className={styles.leftImg}/>
+                </div>
+                <div className={styles.rightItem}>
+                    <img src={door2} alt="pacific lift" className={styles.rightImg}/>
+                </div>
             </div>
         </div>
     )
