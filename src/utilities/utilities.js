@@ -57,9 +57,9 @@ export const bannerAnimatedText = async (styles, id) => {
             const parentEl = document.getElementById(id);
         
             for (let i=0; i<banners.length; i++){
+                await clearAllText(parentEl);
                 await animatedText(banners[i], styles, parentEl);
                 await sleep(3000);
-                await clearAllText(parentEl);
             }
             resolve();
         } catch (error) {

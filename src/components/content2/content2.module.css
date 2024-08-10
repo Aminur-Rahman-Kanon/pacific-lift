@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    padding: 100px 10px;
+    padding: 100px 10px 20px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
@@ -78,9 +78,10 @@
 }
 
 .textWhiteSmall {
-    font-size: 15px;
+    font-size: 14px;
     color: white;
-    line-height: 20px;
+    line-height: 23px;
+    letter-spacing: 0.7px;
     font-weight: 500;
     margin: 20px 0;
 }
@@ -94,7 +95,7 @@
 
 @media (max-width: 1023px) {
     .container {
-        padding: 200px 10px;
+        padding: 200px 10px 20px;
         flex-direction: column-reverse;
     }
 
@@ -109,12 +110,12 @@
 
 @media (max-width: 767px) {
     .container {
-        padding: 150px 10px;
+        padding: 150px 10px 20px;
     }
 }
 
 @media (max-width: 500px) {
     .container {
-        padding: 100px 10px;
+        padding: 100px 10px 10px;
     }
 }

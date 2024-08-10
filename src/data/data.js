@@ -1,3 +1,11 @@
+import commission from '../assets/images/our_services/commission.jpg';
+import installation from '../assets/images/our_services/installation.jpg';
+import maintenance from '../assets/images/our_services/maintenance.jpg';
+import parts from '../assets/images/our_services/parts.jpg';
+import planning from '../assets/images/our_services/planning.jpg';
+import renovation from '../assets/images/our_services/renovation.jpg';
+import supply from '../assets/images/our_services/supply.jpg';
+
 export const content1Data = [
     [
         <p>Uniquely repurpose client-centered imperatives without distinctive products
@@ -28,4 +36,49 @@ export const content1Data = [
         //     <li>Professional Work Skills</li>
         // </ul>
     ]
+]
+
+export const services = [
+    {
+        id: 1,
+        title: 'planing',
+        text: 'pacific lift offers expert planning services to ensure efficient and safe installation of elevators, escalators, and lifts in commercial and residential buildings.',
+        img: planning
+    },
+    {
+        id: 2,
+        title: 'supply',
+        text: 'pacific lift supplying high-quality lifts for residential and commercial buildings. Offering customized solutions to meet specific needs and providing reliable after-sales support.',
+        img: supply
+    },
+    {
+        id: 3,
+        title: 'installation',
+        text: 'pacific lift installation service provides efficient and reliable installation of high-quality lifts, elevators, and escalators to meet your specific needs.',
+        img: installation
+    },
+    {
+        id: 4,
+        title: 'commissioning',
+        text: 'pacific lift provides commissioning services to ensure proper functioning of elevators. Our experts and trained workers can handle  installation, testing & Commissioning job efficiently for safe, reliable use.',
+        img: commission
+    },
+    {
+        id: 5,
+        title: 'service & maintenance',
+        text: 'pacific lift offers reliable and efficient service & maintenance solutions for your lifts, ensuring their optimal performance and longevity.',
+        img: maintenance
+    },
+    {
+        id: 6,
+        title: 'renovation',
+        text: 'pacific lift offers expert planning services to ensure efficient and safe installation of elevators, escalators, and lifts in commercial and residential buildings.',
+        img: renovation
+    },
+    {
+        id: 7,
+        title: 'spare parts',
+        text: 'High-quality and reliable spare parts available in our stock',
+        img: parts
+    }
 ]

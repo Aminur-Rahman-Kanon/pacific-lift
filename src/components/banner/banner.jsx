@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from './banner.module.css';
 import banner from '../../assets/videos/banner.mp4';
 import { bannerAnimatedText } from '../../utilities/utilities';
@@ -9,11 +9,13 @@ const Banner = () => {
         const interval = setInterval(() => {
             bannerAnimatedText(styles, 'msg-text');
         }, 11000)
+
+        //play on initial render
         bannerAnimatedText(styles, 'msg-text');
 
         // clearing interval
         return () => {
-            clearInterval(interval)
+            clearInterval(interval);
         };
     }, [])
     
