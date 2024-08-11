@@ -67,3 +67,25 @@ export const bannerAnimatedText = async (styles, id) => {
         }
     })
 }
+
+export const focusElement = (index, styles) => {
+    const inputContainer = document.querySelectorAll(`.${styles.inputContainer}`);
+    const label = inputContainer[index].children[0];
+    const input = inputContainer[index].children[1];
+    if (input.value === ''){
+        label.className = `${styles.label} ${styles.activeLabel}`;
+        input.placeholder = '';
+        // input.className = `${styles.input} ${styles.activeInput}`;
+    }
+}
+
+export const leaveFocus = (index, styles) => {
+    const inputContainer = document.querySelectorAll(`.${styles.inputContainer}`);
+    const label = inputContainer[index].children[0];
+    const input = inputContainer[index].children[1];
+    if (input.value === ''){
+        input.placeholder = label.textContent;
+        // input.className = `${styles.input}`;
+        label.className = `${styles.label}`;
+    }
+}

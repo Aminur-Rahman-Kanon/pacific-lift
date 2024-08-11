@@ -1,8 +1,8 @@
 .conatiner {
     position: fixed;
     top: 50%;
-    right: 1%;
-    transform: translate(1%, -50%);
+    right: 0.5%;
+    transform: translate(0.5%, -50%);
     width: 80px;
     /* padding: 10px;
     box-sizing: border-box; */
@@ -34,12 +34,18 @@
     align-items: center;
     margin: 5px auto;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.item:hover {
+    background-color: #8383837d;
+    color: #fcb864;
 }
 
 .item.active {
     background-color: #8383837d;
     color: #fcb864;
-    
 }
 
 .icon {

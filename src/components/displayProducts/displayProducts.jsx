@@ -28,7 +28,7 @@ const DisplayProducts = () => {
                 <span className={styles.value}>{prd.floor}</span>
             </div>
             <div className={styles.btnGroup}>
-                <button className={styles.btn}>order now</button>
+                <Link to={`/place-order/${prd.title}`} className={styles.btn}>order now</Link>
                 <button className={styles.btn}>contact us</button>
             </div>
         </div>

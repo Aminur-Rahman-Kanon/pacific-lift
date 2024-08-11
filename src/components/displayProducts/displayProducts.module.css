@@ -105,11 +105,16 @@
 }
 
 .btn {
+    text-decoration: none;
     width: 150px;
     height: 40px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 13px;
     transition: background-color 1s ease;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:nth-child(1) {
