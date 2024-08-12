@@ -143,6 +143,7 @@
     width: 200px;
     height: 40px;
     text-decoration: none;
+    text-transform: capitalize;
     display: flex;
     justify-content: center;
     align-items: center;

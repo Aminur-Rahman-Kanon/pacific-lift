@@ -207,7 +207,7 @@ input[type="radio"] {
     }
 
     .leftItem {
-        width: 50%;
+        width: 100%;
     }
 
     .form {
@@ -215,14 +215,30 @@ input[type="radio"] {
         padding-left: unset;
         padding: 20px;
     }
+
+    .btnGroup {
+        justify-content: center;
+    }
+    
+    .btn {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
+    .container {
+        padding: 100px 10px 50px;
+    }
     .leftItem {
         width: 100%;
+    }
+
+    .wrapper {
+        padding: 0;
     }
 
     .form {
         padding: 5px
     }
+
 }

@@ -6,7 +6,7 @@ import { focusElement, leaveFocus } from '../../utilities/utilities';
 
 const OrderNow = () => {
 
-    const { itemId } = useParams();
+    const { itemId, category } = useParams();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const OrderNow = () => {
 
     if (!itemId) return;
 
-    const item = products && products.filter(item => item.title === itemId);
+    const item = products && category && products[category].filter(item => item.title === itemId);
     if (!item.length) return;
 
     const displayProduct = <div className={styles.bgContainer}>
@@ -104,7 +104,11 @@ const OrderNow = () => {
                     </div>
                     <div className={styles.btnGroup}>
                         <button className={styles.btn}>submit</button>
-                        <button className={styles.btn} onClick={() => navigate(-1)}>go back</button>
+                        <button className={styles.btn} onClick={(e) => {
+                                e.preventDefault();
+                                return navigate(-1);
+                            }
+                            }>go back</button>
                     </div>
                 </form>
             </div>

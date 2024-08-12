@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
             <div className={styles.contact}>
                 <h3 className={styles.headerSmallWhite}>say hello</h3>
-                <a href='tel:008801913777565' className={styles.tel}>+8801013777565</a>
+                <a href='tel:008801913777565' className={styles.tel}>+8801913777565</a>
                 <a href='mailto:info@pacificlift.net' className={styles.tel}>info@pacificlift.net</a>
             </div>
         </div>

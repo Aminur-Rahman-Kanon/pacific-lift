@@ -6,6 +6,7 @@ import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
 import ContextApi from './components/contentApi/contextApi';
 import OrderNow from './pages/orderNow/orderNow';
+import Category from './pages/category/category';
 import './App.css';
 
 function App() {
@@ -55,7 +56,8 @@ function App() {
         <Topbar />
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/place-order/:itemId' element={<OrderNow />} />
+          <Route path='/product/:category' element={<Category />} />
+          <Route path='/place-order/:category/:itemId' element={<OrderNow />} />
         </Routes>
         <Footer />
       </ContextApi.Provider>

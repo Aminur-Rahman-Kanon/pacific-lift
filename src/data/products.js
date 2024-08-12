@@ -1,84 +1,410 @@
-import p1 from '../assets/images/products/1.png';
-import p2 from '../assets/images/products/2.png';
-import p3 from '../assets/images/products/3.png';
-import p4 from '../assets/images/products/4.png';
-import p5 from '../assets/images/products/5.png';
-import p6 from '../assets/images/products/6.png';
-import p7 from '../assets/images/products/7.png';
-import p8 from '../assets/images/products/8.png';
+import p1 from '../assets/images/products/cabin/1.png';
+import p2 from '../assets/images/products/cabin/2.png';
+import p3 from '../assets/images/products/cabin/3.png';
+import p4 from '../assets/images/products/cabin/4.png';
+import p5 from '../assets/images/products/cabin/5.png';
+import p6 from '../assets/images/products/cabin/6.png';
+import p7 from '../assets/images/products/cabin/7.png';
+import p8 from '../assets/images/products/cabin/8.png';
+
+import l1 from '../assets/images/products/floor/1.jpg';
+import l2 from '../assets/images/products/floor/2.jpg';
+import l3 from '../assets/images/products/floor/3.jpg';
+import l4 from '../assets/images/products/floor/4.jpg';
+import l5 from '../assets/images/products/floor/5.jpg';
+
+import c1 from '../assets/images/products/ceiling/1.jpg';
+import c2 from '../assets/images/products/ceiling/2.jpg';
+import c3 from '../assets/images/products/ceiling/3.jpg';
+import c4 from '../assets/images/products/ceiling/4.jpg';
+import c5 from '../assets/images/products/ceiling/5.jpg';
+
+import cp1 from '../assets/images/products/controller/1.jpg';
+import cp2 from '../assets/images/products/controller/2.jpg';
+import cp3 from '../assets/images/products/controller/3.jpg';
+import cp4 from '../assets/images/products/controller/4.jpg';
+import cp5 from '../assets/images/products/controller/5.jpg';
+
+import r1 from '../assets/images/products/handrail/1.jpg';
+import r2 from '../assets/images/products/handrail/2.jpg';
+import r3 from '../assets/images/products/handrail/3.jpg';
+import r4 from '../assets/images/products/handrail/4.jpg';
+import r5 from '../assets/images/products/handrail/5.jpg';
 
 
-export const products = [
-    {
-        id: 1,
-        title: 'tko-j114n',
-        celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
-        wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
-        handrail: 'Hairline Stainless Steel',
-        floor: 'pvc',
-        img : p1
-    },
-    {
-        id: 2,
-        title: 'tko-j114n',
-        celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
-        wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
-        handrail: 'Hairline Stainless Steel',
-        floor: 'pvc',
-        img : p2
-    },
-    {
-        id: 1,
-        title: 'tko-j114n',
-        celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
-        wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
-        handrail: 'Hairline Stainless Steel',
-        floor: 'pvc',
-        img : p3
-    },
-    {
-        id: 1,
-        title: 'tko-j114n',
-        celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
-        wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
-        handrail: 'Hairline Stainless Steel',
-        floor: 'pvc',
-        img : p4
-    },
-    {
-        id: 1,
-        title: 'tko-j114n',
-        celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
-        wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
-        handrail: 'Hairline Stainless Steel',
-        floor: 'pvc',
-        img : p5
-    },
-    {
-        id: 1,
-        title: 'tko-j114n',
-        celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
-        wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
-        handrail: 'Hairline Stainless Steel',
-        floor: 'pvc',
-        img : p6
-    },
-    {
-        id: 1,
-        title: 'tko-j114n',
-        celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
-        wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
-        handrail: 'Hairline Stainless Steel',
-        floor: 'pvc',
-        img : p7
-    },
-    {
-        id: 1,
-        title: 'tko-j114n',
-        celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
-        wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
-        handrail: 'Hairline Stainless Steel',
-        floor: 'pvc',
-        img : p8
-    }
-]
+export const products = {
+    cabin: [
+        {
+            id: 1,
+            category: 'cabin',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : p1
+        },
+        {
+            id: 2,
+            category: 'cabin',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : p2
+        },
+        {
+            id: 3,
+            category: 'cabin',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : p3
+        },
+        {
+            id: 4,
+            category: 'cabin',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : p4
+        },
+        {
+            id: 5,
+            category: 'cabin',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : p5
+        },
+        {
+            id: 6,
+            category: 'cabin',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : p6
+        },
+        {
+            id: 7,
+            category: 'cabin',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : p7
+        },
+        {
+            id: 8,
+            category: 'cabin',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : p8
+        }
+    ],
+    floor: [
+        {
+            id: 1,
+            category: 'floor',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : l1
+        },
+        {
+            id: 2,
+            category: 'floor',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : l2
+        },
+        {
+            id: 3,
+            category: 'floor',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : l3
+        },
+        {
+            id: 4,
+            category: 'floor',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : l4
+        },
+        {
+            id: 5,
+            category: 'floor',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : l5
+        }
+    ],
+    ceiling: [
+        {
+            id: 1,
+            category: 'ceiling',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : c1
+        },
+        {
+            id: 2,
+            category: 'ceiling',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : c2
+        },
+        {
+            id: 3,
+            category: 'ceiling',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : c3
+        },
+        {
+            id: 4,
+            category: 'ceiling',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : c4
+        },
+        {
+            id: 5,
+            category: 'ceiling',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : c5
+        }
+    ],
+    controller: [
+        {
+            id: 1,
+            category: 'controller',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : cp1
+        },
+        {
+            id: 2,
+            category: 'controller',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : cp2
+        },
+        {
+            id: 3,
+            category: 'controller',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : cp3
+        },
+        {
+            id: 4,
+            category: 'controller',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : cp4
+        },
+        {
+            id: 5,
+            category: 'controller',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : cp5
+        }
+    ],
+    handrail: [
+        {
+            id: 1,
+            category: 'handrail',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : r1
+        },
+        {
+            id: 2,
+            category: 'handrail',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : r2
+        },
+        {
+            id: 3,
+            category: 'handrail',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : r3
+        },
+        {
+            id: 4,
+            category: 'handrail',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : r4
+        },
+        {
+            id: 5,
+            category: 'handrail',
+            title: 'tko-j114n',
+            details: {
+                celling: 'Mirror Stainless Still Frame, Acrylic Decoration, LED Lighting',
+                wall: 'Mirror Etching Hairline Stainless Steel Finish with Gold',
+                handrail: 'Hairline Stainless Steel',
+                floor: 'pvc',
+            },
+            price: 'BDT 150000',
+            img : r5
+        }
+    ]
+}

@@ -5,30 +5,24 @@ import { Link } from 'react-router-dom';
 
 const DisplayProducts = () => {
 
-    const displayProducts = products && products.slice(0, 4).map(prd => <div className={styles.wrapper}>
+    const displayProducts = products && products.cabin.slice(0, 4).map(prd => <div key={prd.id} className={styles.wrapper}>
         <div className={styles.bgContainer}>
             <img src={prd.img} alt={prd.title} className={styles.bg} />
         </div>
         <div className={styles.details}>
             <title className={styles.title}>{prd.title}</title>
+            {
+                Object.keys(prd.details).map(dtls => <div className={styles.textContainer}>
+                    <span className={styles.key}>{dtls}</span>
+                    <span className={styles.value}>{prd.details[dtls]}</span>
+                </div>)
+            }
             <div className={styles.textContainer}>
-                <span className={styles.key}>celling</span>
-                <span className={styles.value}>{prd.celling}</span>
-            </div>
-            <div className={styles.textContainer}>
-                <span className={styles.key}>wall</span>
-                <span className={styles.value}>{prd.wall}</span>
-            </div>
-            <div className={styles.textContainer}>
-                <span className={styles.key}>handrail</span>
-                <span className={styles.value}>{prd.handrail}</span>
-            </div>
-            <div className={styles.textContainer}>
-                <span className={styles.key}>floor</span>
-                <span className={styles.value}>{prd.floor}</span>
+                <span className={styles.key}>price</span>
+                <span className={styles.value}>{prd.price}</span>
             </div>
             <div className={styles.btnGroup}>
-                <Link to={`/place-order/${prd.title}`} className={styles.btn}>order now</Link>
+                <Link to={`/place-order/${prd.category}/${prd.title}`} className={styles.btn}>order now</Link>
                 <button className={styles.btn}>contact us</button>
             </div>
         </div>
@@ -39,7 +33,7 @@ const DisplayProducts = () => {
             <div className={styles.products}>
                 {displayProducts}
             </div>
-            <Link to={''} className={styles.link}>browse all products</Link>
+            <Link to={'/product/cabin'} className={styles.link}>browse all products</Link>
         </div>
     )
 }
