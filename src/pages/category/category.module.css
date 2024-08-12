@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    overflow: hidden;
 }
 
 .routeContainer {
@@ -78,7 +77,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    overflow: hidden;
 }
 
 .hr {
@@ -115,7 +113,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .bgContainer {
@@ -132,6 +130,7 @@
 .details {
     width: 100%;
     padding: 10px 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
