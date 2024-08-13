@@ -61,15 +61,16 @@
 
 @media (max-width: 767px) {
     .conatiner {
-        width: 90%;
-        top: unset;
-        bottom: 0;
+        width: 100%;
+        top: 0;
         right: unset;
         left: 50%;
         transform: translate(-50%, 0);
+        border-radius: 0 0 10px 10px;
     }
 
     .wrapper {
+        padding: 5px;
         flex-direction: row;
     }
 }

@@ -7,6 +7,7 @@ import Navbar from './components/navbar/navbar';
 import ContextApi from './components/contentApi/contextApi';
 import OrderNow from './pages/orderNow/orderNow';
 import Category from './pages/category/category';
+import Blog from './pages/blog/blog';
 import './App.css';
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
   const serviceRef = useRef(null);
   const summaryRef = useRef(null);
   const statusRef = useRef(null);
+  const blogRef = useRef(null);
 
   const navigate = useNavigate();
 
   const refs = {
-    homeRef, aboutRef, productsRef, serviceRef, summaryRef, statusRef
+    homeRef, aboutRef, productsRef, serviceRef, summaryRef, statusRef, blogRef
   }
 
   const [currentPath, setCurrentPath] = useState('homeRef');
@@ -58,6 +60,7 @@ function App() {
           <Route path='/' element={<Homepage />} />
           <Route path='/product/:category' element={<Category />} />
           <Route path='/place-order/:category/:itemId' element={<OrderNow />} />
+          <Route path='/blog/:blogId' element={<Blog />} />
         </Routes>
         <Footer />
       </ContextApi.Provider>

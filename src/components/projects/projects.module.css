@@ -129,6 +129,9 @@
 }
 
 @media (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
     .card {
         flex-direction: column;
         height: auto;

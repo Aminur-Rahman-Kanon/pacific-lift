@@ -9,6 +9,8 @@ import OurService from "../../components/ourService/ourService";
 import Summary from "../../components/summary/summary";
 import Projects from "../../components/projects/projects";
 import DisplayProducts from "../../components/displayProducts/displayProducts";
+import Slider from "../../components/slider/slider";
+import BlogList from "../../components/blogList/blogList";
 
 const Homepage = () => {
 
@@ -39,6 +41,12 @@ const Homepage = () => {
             </div>
             <div className={styles.item} ref={context.refs.projectsRef}>
                 <Projects />
+            </div>
+            <div className={styles.item}>
+                <Slider />
+            </div>
+            <div className={styles.item} ref={context.refs.blogRef}>
+                <BlogList />
             </div>
         </div>
     )

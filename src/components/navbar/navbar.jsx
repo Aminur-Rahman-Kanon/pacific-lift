@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import ContextApi from '../contentApi/contextApi';
 import styles from './navbar.module.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faHouse, faLayerGroup, faCircleInfo, faHelmetSafety, faCertificate } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faLayerGroup, faCircleInfo, faHelmetSafety, faCertificate, faBookOpen } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
 
@@ -37,6 +37,11 @@ const Navbar = () => {
                      onClick={() => context.scrollIntoView('summaryRef')}>
                     <FontAwesomeIcon icon={faCertificate} className={styles.icon}/>
                     <span className={styles.text}>summary</span>
+                </div>
+                <div className={path === 'blogRef' ? `${styles.item} ${styles.active}` : styles.item}
+                     onClick={() => context.scrollIntoView('blogRef')}>
+                    <FontAwesomeIcon icon={faBookOpen} className={styles.icon}/>
+                    <span className={styles.text}>blogs</span>
                 </div>
             </div>
         </div>
