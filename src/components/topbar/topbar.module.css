@@ -32,3 +32,9 @@
         justify-content: space-between;
     }
 }
+
+@media (max-width: 767px) {
+    .topbarMain {
+        display: none;
+    }
+}
