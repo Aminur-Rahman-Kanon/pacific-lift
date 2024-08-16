@@ -9,6 +9,7 @@ html {
 html, body {
   margin: 0;
   padding: 0;
+  height: 100dvh;
   box-sizing: border-box;
 }
 
@@ -19,4 +20,10 @@ html, body {
   font-family: "Titillium Web", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+@supports (height: 100dvh){
+  html, body {
+    height: 100dvh;
+  }
 }

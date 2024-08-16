@@ -36,7 +36,7 @@ const Homepage = () => {
             <div className={styles.item} ref={context.refs.serviceRef}>
                 <OurService />
             </div>
-            <div className={styles.item} ref={context.refs.summaryRef}>
+            <div className={styles.item}>
                 <Summary />
             </div>
             <div className={styles.item} ref={context.refs.projectsRef}>

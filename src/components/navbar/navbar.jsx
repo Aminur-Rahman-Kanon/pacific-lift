@@ -18,11 +18,6 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faHouse} className={styles.icon}/>
                     <span className={styles.text}>home</span>
                 </div>
-                <div className={path === 'aboutRef' ? `${styles.item} ${styles.active}` : styles.item}
-                     onClick={() => context.scrollIntoView('aboutRef')}>
-                    <FontAwesomeIcon icon={faCircleInfo} className={styles.icon}/>
-                    <span className={styles.text}>about</span>
-                </div>
                 <div className={path === 'productsRef' ? `${styles.item} ${styles.active}` : styles.item}
                      onClick={() => context.scrollIntoView('productsRef')}>
                     <FontAwesomeIcon icon={faLayerGroup} className={styles.icon}/>
@@ -33,15 +28,20 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faHelmetSafety} className={styles.icon}/>
                     <span className={styles.text}>services</span>
                 </div>
-                <div className={path === 'summaryRef' ? `${styles.item} ${styles.active}` : styles.item}
+                {/* <div className={path === 'summaryRef' ? `${styles.item} ${styles.active}` : styles.item}
                      onClick={() => context.scrollIntoView('summaryRef')}>
                     <FontAwesomeIcon icon={faCertificate} className={styles.icon}/>
                     <span className={styles.text}>summary</span>
-                </div>
+                </div> */}
                 <div className={path === 'blogRef' ? `${styles.item} ${styles.active}` : styles.item}
                      onClick={() => context.scrollIntoView('blogRef')}>
                     <FontAwesomeIcon icon={faBookOpen} className={styles.icon}/>
                     <span className={styles.text}>blogs</span>
+                </div>
+                <div className={path === 'aboutRef' ? `${styles.item} ${styles.active}` : styles.item}
+                     onClick={() => context.scrollIntoView('aboutRef')}>
+                    <FontAwesomeIcon icon={faCircleInfo} className={styles.icon}/>
+                    <span className={styles.text}>about</span>
                 </div>
             </div>
         </div>

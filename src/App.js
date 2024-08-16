@@ -16,14 +16,13 @@ function App() {
   const aboutRef = useRef(null);
   const productsRef = useRef(null);
   const serviceRef = useRef(null);
-  const summaryRef = useRef(null);
   const statusRef = useRef(null);
   const blogRef = useRef(null);
 
   const navigate = useNavigate();
 
   const refs = {
-    homeRef, aboutRef, productsRef, serviceRef, summaryRef, statusRef, blogRef
+    homeRef, aboutRef, productsRef, serviceRef, statusRef, blogRef
   }
 
   const [currentPath, setCurrentPath] = useState('homeRef');
