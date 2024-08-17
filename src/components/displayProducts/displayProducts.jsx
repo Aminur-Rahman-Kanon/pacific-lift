@@ -12,7 +12,7 @@ const DisplayProducts = () => {
         <div className={styles.details}>
             <title className={styles.title}>{prd.title}</title>
             {
-                Object.keys(prd.details).map(dtls => <div className={styles.textContainer}>
+                Object.keys(prd.details).map(dtls => <div key={dtls} className={styles.textContainer}>
                     <span className={styles.key}>{dtls}</span>
                     <span className={styles.value}>{prd.details[dtls]}</span>
                 </div>)

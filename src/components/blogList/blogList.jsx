@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const BlogList = () => {
 
-    const displayBlogs = blogs ? blogs.slice(0, 4).map(blog => <Link to={`/blog/${blog.title}`} className={styles.card}>
+    const displayBlogs = blogs ? blogs.slice(0, 4).map((blog, idx) => <Link key={idx} to={`/blog/${blog.title}`} className={styles.card}>
         <div className={styles.bgContainer}>
             <img src={blog.img} alt={blog.title} className={styles.bg} />
         </div>

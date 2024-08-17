@@ -51,7 +51,8 @@ const AnimateElement1 = () => {
     
     return (
         <div className={styles.wrapper}>
-            <h2 className={styles.headerLargeWhite}  ref={animate}>a brand that doesn't compromise safety</h2>
+            <h3 className={styles.headerSmallOrange} ref={animate}>pacific lift</h3>
+            <h2 className={styles.headerLargeWhite}>a brand that doesn't compromise safety</h2>
             <div className={styles.container} id='animate-el'>
                 <div className={styles.leftItem}>
                     <img src={door1} alt="pacific lift" className={styles.leftImg}/>

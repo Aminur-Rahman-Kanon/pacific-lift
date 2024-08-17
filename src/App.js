@@ -9,6 +9,7 @@ import OrderNow from './pages/orderNow/orderNow';
 import Category from './pages/category/category';
 import Blog from './pages/blog/blog';
 import './App.css';
+import { isElementVisible } from './utilities/utilities';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
   const navigate = useNavigate();
 
   const refs = {
-    homeRef, aboutRef, productsRef, serviceRef, statusRef, blogRef
+    homeRef, aboutRef, productsRef, serviceRef, blogRef
   }
 
   const [currentPath, setCurrentPath] = useState('homeRef');
@@ -38,7 +39,7 @@ function App() {
       refs[item].current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
       setCurrentPath(item);
     }
-  }
+  } 
 
   useEffect(() => {
     if (divert){
@@ -48,7 +49,11 @@ function App() {
     return () => {
       setDivert(false);
     }
-  }, [divert])  
+  }, [divert])
+
+  useEffect(() => {
+    Object.keys(refs).forEach(ref => isElementVisible(ref, {refs, setCurrentPath}));
+  }, [currentPath])
 
   return (
     <div className="App">

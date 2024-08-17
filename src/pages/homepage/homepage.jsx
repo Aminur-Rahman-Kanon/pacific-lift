@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import ContextApi from "../../components/contentApi/contextApi";
 import styles from './homepage.module.css';
 import Banner from "../../components/banner/banner";
@@ -21,15 +21,6 @@ const Homepage = () => {
             <div className={styles.item} ref={context.refs.homeRef}>
                 <Banner />
             </div>
-            <div className={styles.item} ref={context.refs.aboutRef}>
-                <Content1 />
-            </div>
-            <div className={styles.item}>
-                <AnimateElement1 />
-            </div>
-            <div className={styles.item}>
-                <Content2 />
-            </div>
             <div className={styles.item} ref={context.refs.productsRef}>
                 <DisplayProducts />
             </div>
@@ -37,16 +28,17 @@ const Homepage = () => {
                 <OurService />
             </div>
             <div className={styles.item}>
-                <Summary />
-            </div>
-            <div className={styles.item} ref={context.refs.projectsRef}>
                 <Projects />
-            </div>
-            <div className={styles.item}>
-                <Slider />
             </div>
             <div className={styles.item} ref={context.refs.blogRef}>
                 <BlogList />
+            </div>
+            <div className={styles.item} ref={context.refs.aboutRef}>
+                <Content1 />
+                <AnimateElement1 />
+                <Content2 />
+                <Summary />
+                <Slider />
             </div>
         </div>
     )
