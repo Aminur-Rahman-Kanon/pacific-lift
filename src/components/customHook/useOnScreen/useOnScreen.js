@@ -19,7 +19,7 @@ const useOnScreen = (refs, currentPath, setCurrentPath) => {
 
             observer.observe(refs[el].current);
         })
-    }, []);
+    }, [currentPath]);
     
     return intersectingEl;
 }

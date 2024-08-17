@@ -9,7 +9,6 @@ import OrderNow from './pages/orderNow/orderNow';
 import Category from './pages/category/category';
 import Blog from './pages/blog/blog';
 import './App.css';
-// import { isElementVisible } from './utilities/utilities';
 import useOnScreen from './components/customHook/useOnScreen/useOnScreen';
 
 function App() {
@@ -27,11 +26,11 @@ function App() {
   }
   
   const [currentPath, setCurrentPath] = useState('homeRef');
-  const [redirect, setRedirect] = useState(false);
   const elIntersecting = useOnScreen(refs, currentPath, setCurrentPath);
 
   const smoothScrolling = (item) => {
-    if (currentPath !== '/'){
+    const path = window.location.pathname;
+    if (path !== '/'){
       setCurrentPath(item)
       navigate('/');
     }
@@ -44,9 +43,7 @@ function App() {
     if (refs[currentPath]){      
       refs[currentPath].current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
     }
-
-    return () => setRedirect(false);
-  }, [currentPath, redirect])
+  }, [currentPath])
 
   return (
     <div className="App">

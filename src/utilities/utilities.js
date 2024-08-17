@@ -89,29 +89,3 @@ export const leaveFocus = (index, styles) => {
         label.className = `${styles.label}`;
     }
 }
-
-const cb = (entries, target, asset) => {
-    if (entries.length){
-      entries.forEach(el => {
-        if (el.isIntersecting){
-          asset.setCurrentPath(target);
-        }
-      })
-    }
-  }
-
-export const isElementVisible = (target, asset) => {
-    const option = {
-        root: null,
-        rootMargin: '-130px',
-        threshold: 0.15
-    }
-
-    console.log(target);
-
-    const element = asset.refs[target].current;
-
-    const observer = new IntersectionObserver((entries) => cb(entries, target, asset), option);
-
-    observer.observe(element)
-}
