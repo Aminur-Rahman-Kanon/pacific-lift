@@ -107,6 +107,8 @@ export const isElementVisible = (target, asset) => {
         threshold: 0.15
     }
 
+    console.log(target);
+
     const element = asset.refs[target].current;
 
     const observer = new IntersectionObserver((entries) => cb(entries, target, asset), option);

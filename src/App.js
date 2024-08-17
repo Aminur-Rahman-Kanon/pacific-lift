@@ -9,55 +9,48 @@ import OrderNow from './pages/orderNow/orderNow';
 import Category from './pages/category/category';
 import Blog from './pages/blog/blog';
 import './App.css';
-import { isElementVisible } from './utilities/utilities';
+// import { isElementVisible } from './utilities/utilities';
+import useOnScreen from './components/customHook/useOnScreen/useOnScreen';
 
 function App() {
+
+  const navigate = useNavigate();
 
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const productsRef = useRef(null);
   const serviceRef = useRef(null);
-  const statusRef = useRef(null);
   const blogRef = useRef(null);
-
-  const navigate = useNavigate();
-
+  
   const refs = {
     homeRef, aboutRef, productsRef, serviceRef, blogRef
   }
-
+  
   const [currentPath, setCurrentPath] = useState('homeRef');
-  const [divert, setDivert] = useState(false);  
+  const [redirect, setRedirect] = useState(false);
+  const elIntersecting = useOnScreen(refs, currentPath, setCurrentPath);
 
-  const scrollIntoView = (item) => {
-    if (window.location.pathname !== '/'){
-      setDivert(true);
-      setCurrentPath(item);
+  const smoothScrolling = (item) => {
+    if (currentPath !== '/'){
+      setCurrentPath(item)
       navigate('/');
     }
     else {
-      refs[item].current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-      setCurrentPath(item);
+      setCurrentPath(item)
     }
-  } 
-
+  }
+  
   useEffect(() => {
-    if (divert){
+    if (refs[currentPath]){      
       refs[currentPath].current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
     }
 
-    return () => {
-      setDivert(false);
-    }
-  }, [divert])
-
-  useEffect(() => {
-    Object.keys(refs).forEach(ref => isElementVisible(ref, {refs, setCurrentPath}));
-  }, [currentPath])
+    return () => setRedirect(false);
+  }, [currentPath, redirect])
 
   return (
     <div className="App">
-      <ContextApi.Provider value={{path: currentPath, setPath: setCurrentPath, scrollIntoView, refs}}>
+      <ContextApi.Provider value={{path: currentPath, setPath: smoothScrolling, refs, elIntersecting}}>
         <Navbar />
         <Topbar />
         <Routes>
