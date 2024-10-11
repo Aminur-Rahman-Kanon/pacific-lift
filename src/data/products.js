@@ -45,7 +45,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : p1
+            img : p1,
+            rating: 5
         },
         {
             id: 2,
@@ -58,7 +59,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : p2
+            img : p2,
+            rating: 4
         },
         {
             id: 3,
@@ -71,7 +73,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : p3
+            img : p3,
+            rating: 3
         },
         {
             id: 4,
@@ -84,7 +87,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : p4
+            img : p4,
+            rating: 2
         },
         {
             id: 5,
@@ -97,7 +101,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : p5
+            img : p5,
+            rating: 1
         },
         {
             id: 6,
@@ -110,7 +115,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : p6
+            img : p6,
+            rating: 5
         },
         {
             id: 7,
@@ -123,7 +129,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : p7
+            img : p7,
+            rating: 4
         },
         {
             id: 8,
@@ -136,7 +143,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : p8
+            img : p8,
+            rating: 3
         }
     ],
     floor: [
@@ -151,7 +159,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : l1
+            img : l1,
+            rating: 2
         },
         {
             id: 2,
@@ -164,7 +173,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : l2
+            img : l2,
+            rating: 1
         },
         {
             id: 3,
@@ -177,7 +187,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : l3
+            img : l3,
+            rating: 5
         },
         {
             id: 4,
@@ -190,7 +201,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : l4
+            img : l4,
+            rating: 4
         },
         {
             id: 5,
@@ -203,7 +215,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : l5
+            img : l5,
+            rating: 3
         }
     ],
     ceiling: [
@@ -218,7 +231,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : c1
+            img : c1,
+            rating: 2
         },
         {
             id: 2,
@@ -231,7 +245,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : c2
+            img : c2,
+            rating: 1
         },
         {
             id: 3,
@@ -244,7 +259,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : c3
+            img : c3,
+            rating: 5
         },
         {
             id: 4,
@@ -257,7 +273,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : c4
+            img : c4,
+            rating: 3
         },
         {
             id: 5,
@@ -270,7 +287,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : c5
+            img : c5,
+            rating: 4
         }
     ],
     controller: [
@@ -285,7 +303,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : cp1
+            img : cp1,
+            rating: 5
         },
         {
             id: 2,
@@ -298,7 +317,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : cp2
+            img : cp2,
+            rating: 4
         },
         {
             id: 3,
@@ -311,7 +331,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : cp3
+            img : cp3,
+            rating: 2
         },
         {
             id: 4,
@@ -324,7 +345,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : cp4
+            img : cp4,
+            rating: 3
         },
         {
             id: 5,
@@ -337,7 +359,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : cp5
+            img : cp5,
+            rating: 5
         }
     ],
     handrail: [
@@ -352,7 +375,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : r1
+            img : r1,
+            rating: 3
         },
         {
             id: 2,
@@ -365,7 +389,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : r2
+            img : r2,
+            rating: 4
         },
         {
             id: 3,
@@ -378,7 +403,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : r3
+            img : r3,
+            rating: 2
         },
         {
             id: 4,
@@ -391,7 +417,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : r4
+            img : r4,
+            rating: 1
         },
         {
             id: 5,
@@ -404,7 +431,8 @@ export const products = {
                 floor: 'pvc',
             },
             price: 'BDT 150000',
-            img : r5
+            img : r5,
+            rating: 3
         }
     ]
 }

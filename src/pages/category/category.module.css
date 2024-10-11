@@ -47,7 +47,7 @@
 
 .container {
     width: 100%;
-    padding: 200px 0 50px;
+    padding: 100px 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -110,6 +110,11 @@
     font-weight: 500;
     margin-right: 10px;
     transition: all 1s ease;
+    cursor: pointer;
+}
+
+.navItem.navActive {
+    color: white
 }
 
 .navItem:hover {
@@ -223,7 +228,7 @@
 
 @media (max-width: 1023px) {
     .container {
-        padding: 100px 0 5px;
+        padding: 20px 0 5px;
     }
 
     .productWrapper {

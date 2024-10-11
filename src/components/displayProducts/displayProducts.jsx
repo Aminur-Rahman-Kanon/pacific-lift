@@ -33,7 +33,7 @@ const DisplayProducts = () => {
             <div className={styles.products}>
                 {displayProducts}
             </div>
-            <Link to={'/product/cabin'} className={styles.link}>browse all products</Link>
+            <Link to={'/products'} className={styles.link}>browse all products</Link>
         </div>
     )
 }

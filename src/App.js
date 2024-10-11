@@ -12,9 +12,7 @@ import './App.css';
 import useOnScreen from './components/customHook/useOnScreen/useOnScreen';
 
 function App() {
-
-  const navigate = useNavigate();
-
+  
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const productsRef = useRef(null);
@@ -27,14 +25,14 @@ function App() {
   
   const [currentPath, setCurrentPath] = useState('homeRef');
   const elIntersecting = useOnScreen(refs, currentPath, setCurrentPath);
-
+  console.log(elIntersecting)
   const smoothScrolling = (item) => {
     if (!item) return;
     setCurrentPath(item)
   }
   
   useEffect(() => {
-    if (refs[currentPath]){      
+    if (refs[currentPath] && refs[currentPath].current){      
       refs[currentPath].current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
     }
   }, [currentPath])
@@ -46,7 +44,7 @@ function App() {
         <Topbar />
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/product/:category' element={<Category />} />
+          <Route path='/products' element={<Category />} />
           <Route path='/place-order/:category/:itemId' element={<OrderNow />} />
           <Route path='/blog/:blogId' element={<Blog />} />
         </Routes>
