@@ -29,14 +29,8 @@ function App() {
   const elIntersecting = useOnScreen(refs, currentPath, setCurrentPath);
 
   const smoothScrolling = (item) => {
-    const path = window.location.pathname;
-    if (path !== '/'){
-      setCurrentPath(item)
-      navigate('/');
-    }
-    else {
-      setCurrentPath(item)
-    }
+    if (!item) return;
+    setCurrentPath(item)
   }
   
   useEffect(() => {
@@ -48,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <ContextApi.Provider value={{path: currentPath, setPath: smoothScrolling, refs, elIntersecting}}>
-        <Navbar />
+        {/* <Navbar /> */}
         <Topbar />
         <Routes>
           <Route path='/' element={<Homepage />} />

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import ContextApi from "../../components/contentApi/contextApi";
 import styles from './homepage.module.css';
 import Banner from "../../components/banner/banner";
@@ -11,34 +11,38 @@ import Projects from "../../components/projects/projects";
 import DisplayProducts from "../../components/displayProducts/displayProducts";
 import Slider from "../../components/slider/slider";
 import BlogList from "../../components/blogList/blogList";
+import Navbar from "../../components/navbar/navbar";
 
 const Homepage = () => {
 
     const context = useContext(ContextApi);
 
     return (
-        <div className={styles.homepageMain}>
-            <div className={styles.item} ref={context.refs.homeRef}>
-                <Banner />
-            </div>
-            <div className={styles.item} ref={context.refs.productsRef}>
-                <DisplayProducts />
-            </div>
-            <div className={styles.item} ref={context.refs.serviceRef}>
-                <OurService />
-            </div>
-            <div className={styles.item}>
-                <Projects />
-            </div>
-            <div className={styles.item} ref={context.refs.blogRef}>
-                <BlogList />
-            </div>
-            <div className={styles.item} ref={context.refs.aboutRef}>
-                <Content1 />
-                <AnimateElement1 />
-                <Content2 />
-                <Summary />
-                <Slider />
+        <div className={styles.main}>
+            <Navbar />
+            <div className={styles.homepageMain}>
+                <div className={styles.item} ref={context.refs.homeRef}>
+                    <Banner />
+                </div>
+                <div className={styles.item} ref={context.refs.productsRef}>
+                    <DisplayProducts />
+                </div>
+                <div className={styles.item} ref={context.refs.serviceRef}>
+                    <OurService />
+                </div>
+                <div className={styles.item}>
+                    <Projects />
+                </div>
+                <div className={styles.item} ref={context.refs.blogRef}>
+                    <BlogList />
+                </div>
+                <div className={styles.item} ref={context.refs.aboutRef}>
+                    <Content1 />
+                    <AnimateElement1 />
+                    <Content2 />
+                    <Summary />
+                    <Slider />
+                </div>
             </div>
         </div>
     )

@@ -5,9 +5,9 @@ const useOnScreen = (refs, currentPath, setCurrentPath) => {
     const [intersectingEl, setIntersectingEl] = useState('');
 
     useEffect(() => {
-        if (!refs) return;
-
         Object.keys(refs).forEach(el => {
+            if (!el.current) return;
+            
             const observer = new IntersectionObserver(([entry]) => {
                 if (entry.isIntersecting){
                     setIntersectingEl(el);
