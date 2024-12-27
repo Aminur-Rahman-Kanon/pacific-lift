@@ -12,9 +12,9 @@ const AdditionalTopbar = () => {
                 <span className={styles.leftItem}>+8801913777565</span>
             </a>
             <div className={styles.rightItemContainer}>
-                <Link to={''} className={styles.rightItem}>Free brochure</Link>
+                <Link to={'/brochure'} className={styles.rightItem}>Free brochure</Link>
                 <Link to={''} className={styles.rightItem}>Request quote</Link>
-                <Link to={''} className={styles.rightItem}>Contact us</Link>
+                <Link to={'/contact'} className={styles.rightItem}>Contact us</Link>
             </div>
         </div>
     )
