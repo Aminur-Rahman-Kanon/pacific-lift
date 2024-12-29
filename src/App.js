@@ -30,11 +30,11 @@ function App() {
 
   const smoothScrolling = (item) => {
     if (!item) return;
-    setCurrentPath(item)
+    setCurrentPath(item);
   }
   
   useEffect(() => {
-    if (refs[currentPath]){      
+    if (refs[currentPath] && refs[currentPath].current){
       refs[currentPath].current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
     }
   }, [currentPath])

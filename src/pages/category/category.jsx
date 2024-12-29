@@ -36,12 +36,12 @@ const Category = () => {
 
     return (
         <div className={styles.main}>
-            <Link to={'/'} className={styles.navbar}>
+            <a href={'/'} className={styles.navbar}>
                 <div className={styles.navIconContainer}>
                     <FontAwesomeIcon icon={faHome} className={styles.navIcon}/>
                 </div>
                 <span className={styles.navText}>Back to Home</span>
-            </Link>
+            </a>
             <section className={styles.container}>
                 <div className={styles.routeContainer}>
                     <span className={styles.route}>{`products / ${path}`}</span>

@@ -2,7 +2,6 @@
     width: 100%;
     padding: 200px 0 50px;
     box-sizing: border-box;
-    max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -11,6 +10,7 @@
 
 .wrapper {
     width: 100%;
+    max-width: 1400px;
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
