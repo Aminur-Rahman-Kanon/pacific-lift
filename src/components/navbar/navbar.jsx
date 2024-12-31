@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <div className={styles.conatiner}>
-            <div className={styles.wrapper}>setPath
+            <div className={styles.wrapper}>
                 <div className={path === 'homeRef' || context.elIntersecting === 'homeRef' ? `${styles.item} ${styles.active}` : styles.item}
                      onClick={() => context.setPath('homeRef')}>
                     <FontAwesomeIcon icon={faHouse} className={styles.icon}/>

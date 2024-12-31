@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 const useOnScreen = (refs, currentPath, setCurrentPath) => {
     //state to set cuurent status of the target element intersection
     const [intersectingEl, setIntersectingEl] = useState('');
+    
 
     useEffect(() => {
         Object.keys(refs).forEach(el => {
-            if (!el.current) return;
+            // if (!el.current) return;
             
             const observer = new IntersectionObserver(([entry]) => {
                 if (entry.isIntersecting){
@@ -16,6 +17,10 @@ const useOnScreen = (refs, currentPath, setCurrentPath) => {
             }, {
                 threshold: 0.15
             })
+
+            console.log(refs[el].current);
+            
+            if (observer === null) return;
 
             observer.observe(refs[el].current);
         })

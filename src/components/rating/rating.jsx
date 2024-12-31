@@ -7,17 +7,22 @@ const Rating = ({amount}) => {
 
     if (!amount) return;
 
-    const active = 5 - amount;
+    const inActiveStar = 5 - amount;
     let displayStar = [];
+    let index = 0;
 
-    if (active) {
-        for (let i=0; i<active; i++){
-            displayStar.push(<FontAwesomeIcon icon={faStar} className={`${styles.star} ${styles.active}`}/>)
+    if (inActiveStar) {
+        for (let i=0; i<amount; i++){
+            displayStar.push(<FontAwesomeIcon key={index++} icon={faStar} className={`${styles.star} ${styles.active}`}/>)
         }
-        displayStar.push(<FontAwesomeIcon icon={faStar} className={styles.star} />)
+        for (let i=0; i<inActiveStar; i++){
+            displayStar.push(<FontAwesomeIcon key={index++} icon={faStar} className={styles.star}/>)
+        }
     }
     else {
-        displayStar.push(<FontAwesomeIcon icon={faStar} className={`${styles.star} ${styles.active}`}/>)
+        for (let i=0; i<amount; i++){
+            displayStar.push(<FontAwesomeIcon key={index++} icon={faStar} className={`${styles.star} ${styles.active}`}/>)
+        }
     }
     return (
         <div className={styles.wrapper}>

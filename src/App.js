@@ -3,18 +3,18 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Homepage from './pages/homepage/homepage';
 import Topbar from './components/topbar/topbar';
 import Footer from './components/footer/footer';
-import Navbar from './components/navbar/navbar';
+// import Navbar from './components/navbar/navbar';
 import ContextApi from './components/contentApi/contextApi';
 import OrderNow from './pages/orderNow/orderNow';
 import Category from './pages/category/category';
 import Blog from './pages/blog/blog';
+import Brochure from './pages/brochure/brochure';
+import Contact from './pages/contact/contact';
 import './App.css';
 import useOnScreen from './components/customHook/useOnScreen/useOnScreen';
 
 function App() {
-
-  const navigate = useNavigate();
-
+  
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const productsRef = useRef(null);
@@ -27,6 +27,7 @@ function App() {
   
   const [currentPath, setCurrentPath] = useState('homeRef');
   const elIntersecting = useOnScreen(refs, currentPath, setCurrentPath);
+  // const elIntersecting = ''
 
   const smoothScrolling = (item) => {
     if (!item) return;
@@ -34,7 +35,7 @@ function App() {
   }
   
   useEffect(() => {
-    if (refs[currentPath] && refs[currentPath].current){
+    if (refs[currentPath] && refs[currentPath].current){      
       refs[currentPath].current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
     }
   }, [currentPath])
@@ -46,9 +47,11 @@ function App() {
         <Topbar />
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/product/:category' element={<Category />} />
+          <Route path='/products' element={<Category />} />
           <Route path='/place-order/:category/:itemId' element={<OrderNow />} />
           <Route path='/blog/:blogId' element={<Blog />} />
+          <Route path='/brochure' element={<Brochure />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
       </ContextApi.Provider>

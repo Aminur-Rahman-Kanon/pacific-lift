@@ -1,0 +1,432 @@
+.main {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.firstEl {
+    position: relative;
+    width: 75%;
+    height: 550px;
+    margin: 50px auto 100px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.priLayer {
+    width: 100%;
+}
+
+.innerLayer1 {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    width: 30%;
+    height: 100%;
+    background-color: #ffb04c;
+}
+
+.innerLayer1Left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    width: 30%;
+    height: 100%;
+    background-color: #ffb04c;
+}
+
+.innerLayer2 {
+    position: absolute;
+    width: 93.5%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.bg1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.outerLayer {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    transform: translate(0, 20%);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    width: 50%;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.outerLayerRight {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    transform: translate(0, 20%);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    width: 50%;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.outInnerLayer {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.orangeDot {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 10px 0;
+}
+
+.orangeDot::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: inherit;
+    height: inherit;
+    background-color: #f58e07;
+    border: none;
+    border-radius: 50%;
+}
+
+.headingExLargeBlack {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: inherit;
+}
+
+.headingLargeBlack {
+    font-size: 1.3rem;
+    margin: 5px 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+}
+
+.textExtraSmallBlack {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: black;
+    text-transform: capitalize;
+}
+
+.secondEl {
+    width: 100%;
+    margin: 50px auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/images/brochure/brochure_bg_2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.secInnerLayer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.firstColumn, .secondColumn {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.element {
+    width: 50%;
+    max-width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+}
+
+.imgLayer {
+    width: 40px;
+    height: 40px;
+    background-color: #f58e07;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.headingSmallBlack {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: inherit;
+    color: black;
+    text-transform: uppercase;
+}
+
+.textSmallBlack {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: inherit;
+    color: black;
+    text-align: center;
+}
+
+.link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.link::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 1.5px;
+    border: none;
+    background-color: black;
+    transition: all 0.5s ease-out;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.downloadBtn {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #f58e07;
+    background-color: #f58e07;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourthEl {
+    width: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px auto;
+    background-color: #444;
+}
+
+.innerPart1 {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.textBox {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f58e07;
+}
+
+.text {
+    display: block;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.innerPart2 {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.linkBtn {
+    width: 125px;
+    height: 40px;
+    border: 1px solid #f58e07;
+    background-color: #f58e07;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin: 10px 0;
+    transition: all 0.7s ease-out;
+}
+
+.linkBtn:hover {
+    background-color: #da7d03;
+}
+
+@media (min-width: 1024px) {
+    .firstEl {
+        height: 550px;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .firstEl {
+        height: 450px;
+    }
+
+    .outerLayer {
+        max-width: 200px;
+    }
+
+    .headingLargeBlack {
+        font-size: 1.2rem;
+    }
+
+    .secInnerLayer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .firstColumn, .secondColumn {
+        gap: 15px;
+    }
+
+    .element {
+        max-width: 350px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .firstEl {
+        width: 95%;
+        height: 400px;
+    }
+    
+    .orangeDot {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .firstColumn, .secondColumn {
+        flex-direction: column;
+    }
+    
+    .element {
+        max-width: unset;
+        width: 90%;
+    }
+    
+    .downloadBtn {
+        width: 100%;
+    }
+
+    .fourthEl {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .innerPart1, .innerPart2 {
+        width: 100%;
+    }
+
+    .textBox {
+        max-width: unset;
+    }
+
+    .linkBtn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .firstEl {
+        height: 350px;
+    }
+
+    .outerLayer {
+        max-width: 150px;
+    }
+
+    .headingLargeBlack {
+        font-size: 1rem;
+    }
+}

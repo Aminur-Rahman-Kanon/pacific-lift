@@ -25,14 +25,14 @@
 }
 
 .item {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    left: max(calc(200px * 8), 100%);
+    left: max(calc(100px * 8), 100%);
     animation: fadeLeft 30s linear infinite;
     display: flex;
     justify-content: center;
