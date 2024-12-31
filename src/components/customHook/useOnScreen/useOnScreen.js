@@ -7,7 +7,6 @@ const useOnScreen = (refs, currentPath, setCurrentPath) => {
 
     useEffect(() => {
         Object.keys(refs).forEach(el => {
-            if (!el.current) return;            
             
             const observer = new IntersectionObserver(([entry]) => {
                 if (entry.isIntersecting){
@@ -18,7 +17,7 @@ const useOnScreen = (refs, currentPath, setCurrentPath) => {
                 threshold: 0.15
             })
             
-            if (observer === null) return;
+            if (!refs[el].current) return;
 
             observer.observe(refs[el].current);
         })

@@ -10,9 +10,6 @@ const Navbar = () => {
 
     const path = context.path;
 
-    console.log(path);
-    
-
     return (
         <div className={styles.conatiner}>
             <div className={styles.wrapper}>

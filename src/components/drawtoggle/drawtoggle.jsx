@@ -7,8 +7,6 @@ import ContextApi from "../contentApi/contextApi";
 const Drawtoggle = () => {
 
     const context = useContext(ContextApi);
-    console.log(context);
-    
 
     return (
         <div className={styles.drawtoggleMain} onClick={() => context.setSidedrawer((sidedrawer) => !sidedrawer)}>
