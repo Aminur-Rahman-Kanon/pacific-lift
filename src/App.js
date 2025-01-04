@@ -12,6 +12,8 @@ import Contact from './pages/contact/contact';
 import './App.css';
 import useOnScreen from './components/customHook/useOnScreen/useOnScreen';
 import Sidedrawer from './components/sidedrawer/sideadrawer';
+import { disableScroll } from './utilities/utilities';
+import Backdrop from './components/backdrop/backdrop';
 
 function App() {
   
@@ -26,13 +28,31 @@ function App() {
   }
 
   const [sidedrawer, setSidedrawer] = useState(false);
+  const [backdrop, setBackdrop] = useState(false);
   
   const [currentPath, setCurrentPath] = useState('homeRef');
   const elIntersecting = useOnScreen(refs, currentPath, setCurrentPath);
 
+  useEffect(() => {
+    if (sidedrawer){
+      disableScroll();
+      setBackdrop(true);
+    }
+    else {
+      setSidedrawer(false);
+      setBackdrop(false);
+      window.onscroll = () => {};
+    }
+  }, [sidedrawer])
+
   const smoothScrolling = (item) => {
     if (!item) return;
     setCurrentPath(item);
+  }
+
+  const toggleBackdrop = () => {
+    setSidedrawer(false);
+    setBackdrop(false);
   }
   
   useEffect(() => {
@@ -53,6 +73,7 @@ function App() {
   return (
     <div className="App">
       <ContextApi.Provider value={{...contextValue}}>
+        <Backdrop backdrop={backdrop} toggle={ toggleBackdrop }/>
         <Topbar />
         <Sidedrawer />
         <Routes>

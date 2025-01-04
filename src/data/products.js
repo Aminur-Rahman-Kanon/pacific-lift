@@ -44,7 +44,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : p1,
             rating: 5
         },
@@ -58,7 +58,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : p2,
             rating: 4
         },
@@ -72,7 +72,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : p3,
             rating: 3
         },
@@ -86,7 +86,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : p4,
             rating: 2
         },
@@ -100,7 +100,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : p5,
             rating: 1
         },
@@ -114,7 +114,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : p6,
             rating: 5
         },
@@ -128,7 +128,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : p7,
             rating: 4
         },
@@ -142,7 +142,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : p8,
             rating: 3
         }
@@ -158,7 +158,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : l1,
             rating: 2
         },
@@ -172,7 +172,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : l2,
             rating: 1
         },
@@ -186,7 +186,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : l3,
             rating: 5
         },
@@ -200,7 +200,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : l4,
             rating: 4
         },
@@ -214,7 +214,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : l5,
             rating: 3
         }
@@ -230,7 +230,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : c1,
             rating: 2
         },
@@ -244,7 +244,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : c2,
             rating: 1
         },
@@ -258,7 +258,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : c3,
             rating: 5
         },
@@ -272,7 +272,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : c4,
             rating: 3
         },
@@ -286,7 +286,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : c5,
             rating: 4
         }
@@ -302,7 +302,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : cp1,
             rating: 5
         },
@@ -316,7 +316,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : cp2,
             rating: 4
         },
@@ -330,7 +330,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : cp3,
             rating: 2
         },
@@ -344,7 +344,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : cp4,
             rating: 3
         },
@@ -358,7 +358,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : cp5,
             rating: 5
         }
@@ -374,7 +374,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : r1,
             rating: 3
         },
@@ -388,7 +388,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : r2,
             rating: 4
         },
@@ -402,7 +402,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : r3,
             rating: 2
         },
@@ -416,7 +416,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : r4,
             rating: 1
         },
@@ -430,7 +430,7 @@ export const products = {
                 handrail: 'Hairline Stainless Steel',
                 floor: 'pvc',
             },
-            price: 'BDT 150000',
+            price: 'Contact us for price',
             img : r5,
             rating: 3
         }

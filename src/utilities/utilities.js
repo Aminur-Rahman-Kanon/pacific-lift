@@ -2,6 +2,13 @@ export function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+export const disableScroll = () => {
+    const positionTop = window.screenY || document.documentElement.scrollTop;
+    const positionLeft = window.screenX || document.documentElement.scrollLeft;
+
+    window.onscroll = () => window.scrollTo(positionLeft, positionTop);
+}
+
 const animationHandler = (text, parent, styles) => {
     return new Promise(async (resolve, reject) => {
         try {
