@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styles from './sidedrawer.module.css';
 import Logo from "../logo/logo";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faLayerGroup, faCircleInfo, faHelmetSafety, faBookOpen, faPhone, faEnvelope, faX } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faLayerGroup, faComments, faBook, faPaperPlane, faPhone, faEnvelope, faX } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import ContextApi from "../contentApi/contextApi";
 
@@ -33,23 +33,23 @@ const Sidedrawer = () => {
                             </span>
                             <span className={styles.text}>Products</span>
                         </a>
-                        <a href="#" className={styles.content}>
+                        <a href="/brochure" className={styles.content}>
                             <span className={styles.iconContainer}>
-                                <FontAwesomeIcon icon={faHelmetSafety} className={styles.iconMedium} />
+                                <FontAwesomeIcon icon={faBook} className={styles.iconMedium} />
                             </span>
-                            <span className={styles.text}>Servies</span>
+                            <span className={styles.text}>Brochure</span>
                         </a>
                         <a href="#" className={styles.content}>
                             <span className={styles.iconContainer}>
-                                <FontAwesomeIcon icon={faBookOpen} className={styles.iconMedium} />
+                                <FontAwesomeIcon icon={faPaperPlane} className={styles.iconMedium} />
                             </span>
-                            <span className={styles.text}>Blogs</span>
+                            <span className={styles.text}>Request Quote</span>
                         </a>
                         <a href="#" className={styles.content}>
                             <span className={styles.iconContainer}>
-                                <FontAwesomeIcon icon={faCircleInfo} className={styles.iconMedium} />
+                                <FontAwesomeIcon icon={faComments} className={styles.iconMedium} />
                             </span>
-                            <span className={styles.text}>About</span>
+                            <span className={styles.text}>Contact Us</span>
                         </a>
                     </div>
                 </div>
