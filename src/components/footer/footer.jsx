@@ -22,7 +22,7 @@ const Footer = () => {
                     <span className={styles.textSmallWhite}>jatrabari, dhaka</span>
                 </div>
                 <div className={styles.iconContainer}>
-                    <a href='' className={styles.socialLinkContainer}>
+                    <a target='_blank' href='https://www.facebook.com/pacificlift/?locale=en_GB' className={styles.socialLinkContainer}>
                         <FontAwesomeIcon icon={faFacebook} className={styles.socialIcon} />
                     </a>
                     <a href='' className={styles.socialLinkContainer}>

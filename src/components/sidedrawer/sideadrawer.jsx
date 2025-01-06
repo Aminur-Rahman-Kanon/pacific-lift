@@ -68,7 +68,7 @@ const Sidedrawer = () => {
                             <span className={styles.textSmall}>info@pacificlift.com</span>
                         </a>
                         <div className={styles.socialItem}>
-                            <a href="#" className={styles.socialLink}>
+                            <a target="_blank" href="https://www.facebook.com/pacificlift/?locale=en_GB" className={styles.socialLink}>
                                 <FontAwesomeIcon icon={faFacebook} className={styles.iconMedium}/>
                             </a>
                             <a href="#" className={styles.socialLink}>

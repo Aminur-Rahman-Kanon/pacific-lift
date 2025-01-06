@@ -1,5 +1,6 @@
 .main {
     width: 100%;
+    max-width: 1400px;
     padding-top: 150px;
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@
 
 .firstEl {
     position: relative;
-    width: 75%;
+    width: 90%;
     height: 550px;
     margin: 50px auto 100px;
     padding-bottom: 50px;
