@@ -13,7 +13,7 @@ const AdditionalTopbar = () => {
             </a>
             <div className={styles.rightItemContainer}>
                 <Link to={'/brochure'} className={styles.rightItem}>Free brochure</Link>
-                <Link to={''} className={styles.rightItem}>Request quote</Link>
+                <Link to={'/get-a-quote'} className={styles.rightItem}>Request quote</Link>
                 <Link to={'/contact'} className={styles.rightItem}>Contact us</Link>
             </div>
         </div>

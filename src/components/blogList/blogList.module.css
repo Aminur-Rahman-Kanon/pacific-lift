@@ -84,7 +84,8 @@
 }
 
 .link {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 40px;
     border: 1px solid #ffb04e;
     background-color: #ffb04e;
@@ -117,6 +118,10 @@
     .list {
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
+    }
+
+    .link {
+        max-width: unset;
     }
 }
 

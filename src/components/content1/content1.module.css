@@ -103,8 +103,8 @@
 .navBtn {
     width: 140px;
     height: 40px;
-    border: 1px solid #6d4107;
-    color: #bb6a00;
+    border: 1px solid #f79413;
+    color: #f79413;
     font-size: 13.5px;
     font-weight: 600;
     background-color: transparent;
@@ -116,7 +116,7 @@
 }
 
 .navBtn.active {
-    background-color: #bb6a00;
+    background-color: #f79413;
     color: white;
 }
 

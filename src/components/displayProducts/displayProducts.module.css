@@ -36,7 +36,7 @@
 }
 
 .bgContainer {
-    width: 45%;
+    width: 40%;
     height: 100%;
     overflow: hidden;
 }
@@ -50,7 +50,7 @@
 .details {
     width: 55%;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -96,47 +96,29 @@
     text-transform: capitalize;
 }
 
-.btnGroup {
+/* .btnGroup {
     width: 100%;
     margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .btn {
     text-decoration: none;
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     height: 40px;
     cursor: pointer;
     font-size: 13px;
     transition: background-color 1s ease;
-    text-transform: capitalize;
+    text-transform: none;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.btn:nth-child(1) {
-    border: 1px solid #ffb04c;
-    background-color: #ffb04c;
+    border: 1px solid #ff9100;
+    background-color: #ff9100;
     color: white;
-    margin-right: 10px;
-}
-
-.btn:nth-child(1):hover {
-    background-color: #ff9203;
-}
-
-.btn:nth-child(2) {
-    border: 1px solid rgb(56, 56, 56);
-    background-color: rgb(56, 56, 56);
-    color: white;
-    margin-left: 10px;
-}
-
-.btn:nth-child(2):hover {
-    background-color: black;
 }
 
 .link {
@@ -158,9 +140,9 @@
         grid-template-columns: 1fr;
     }
 
-    /* .wrapper {
-        height: 420px;
-    } */
+    .bgContainer {
+        width: 30%;
+    }
 
     .details {
         padding: 20px;
@@ -168,6 +150,10 @@
 }
 
 @media (max-width: 767px) {
+    .products {
+        gap: 50px;
+    }
+
     .container {
         margin: 20px auto;
         padding: 10px;
@@ -176,18 +162,29 @@
     .wrapper {
         height: auto;
         flex-direction: column;
+        align-items: center;
     }
 
     .bgContainer {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 
     .details {
         width: 100%;
         height: auto;
-        padding: 10px;
-        box-sizing: border-box;
+        /* padding: 10px;
+        box-sizing: border-box; */
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .textContainer {
+        margin: 0;
     }
 
     .key {
@@ -199,7 +196,7 @@
     }
 
     .btn {
-        width: 50%;
+        max-width: unset;
     }
 
     .link {

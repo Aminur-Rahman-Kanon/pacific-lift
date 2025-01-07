@@ -17,14 +17,16 @@ const DisplayProducts = () => {
                     <span className={styles.value}>{prd.details[dtls]}</span>
                 </div>)
             }
-            <div className={styles.textContainer}>
-                <span className={styles.key}>price</span>
-                <span className={styles.value}>{prd.price}</span>
+            <div className={styles.textContainer} style={{alignItems: 'center'}}>
+                <span className={styles.key} style={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}}>price</span>
+                <Link to={`place-order/${prd.category}/${prd.title}}`} className={styles.btn}>
+                    Contact us for price
+                </Link>
             </div>
-            <div className={styles.btnGroup}>
+            {/* <div className={styles.btnGroup}>
                 <Link to={`/place-order/${prd.category}/${prd.title}`} className={styles.btn}>order now</Link>
                 <button className={styles.btn}>contact us</button>
-            </div>
+            </div> */}
         </div>
     </div>)
     return (

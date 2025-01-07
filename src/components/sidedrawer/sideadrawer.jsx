@@ -39,13 +39,13 @@ const Sidedrawer = () => {
                             </span>
                             <span className={styles.text}>Brochure</span>
                         </a>
-                        <a href="#" className={styles.content}>
+                        <a href="/get-a-quote" className={styles.content}>
                             <span className={styles.iconContainer}>
                                 <FontAwesomeIcon icon={faPaperPlane} className={styles.iconMedium} />
                             </span>
                             <span className={styles.text}>Request Quote</span>
                         </a>
-                        <a href="#" className={styles.content}>
+                        <a href="/contact" className={styles.content}>
                             <span className={styles.iconContainer}>
                                 <FontAwesomeIcon icon={faComments} className={styles.iconMedium} />
                             </span>

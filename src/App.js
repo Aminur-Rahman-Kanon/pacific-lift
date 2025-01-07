@@ -14,6 +14,7 @@ import useOnScreen from './components/customHook/useOnScreen/useOnScreen';
 import Sidedrawer from './components/sidedrawer/sideadrawer';
 import { disableScroll } from './utilities/utilities';
 import Backdrop from './components/backdrop/backdrop';
+import Quote from './pages/quote/quote';
 
 function App() {
   
@@ -83,6 +84,7 @@ function App() {
           <Route path='/blog/:blogId' element={<Blog />} />
           <Route path='/brochure' element={<Brochure />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/get-a-quote' element={<Quote />} />
         </Routes>
         <Footer />
       </ContextApi.Provider>
