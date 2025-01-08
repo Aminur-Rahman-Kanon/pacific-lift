@@ -19,7 +19,7 @@ const DisplayProducts = () => {
             }
             <div className={styles.textContainer} style={{alignItems: 'center'}}>
                 <span className={styles.key} style={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}}>price</span>
-                <Link to={`place-order/${prd.category}/${prd.title}}`} className={styles.btn}>
+                <Link to={`place-order/${prd.category}/${prd.title}`} className={styles.btn}>
                     Contact us for price
                 </Link>
             </div>

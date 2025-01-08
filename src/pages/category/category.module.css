@@ -1,6 +1,8 @@
 .main {
     width: 100%;
+    max-width: 1400px;
     position: relative;
+    margin: auto;
 }
 
 .navbar {
@@ -153,7 +155,7 @@
     margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
 }

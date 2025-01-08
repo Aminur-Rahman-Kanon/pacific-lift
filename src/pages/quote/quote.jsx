@@ -17,14 +17,6 @@ const Quote = () => {
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
 
-    console.log(name);
-    console.log(email);
-    console.log(phone);
-    console.log(message);
-    console.log(isBtnDisable);
-    
-    
-
     useEffect(() => {
         if (name, email, phone){
             setIsBtnDisable(false);
