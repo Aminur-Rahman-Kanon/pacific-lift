@@ -1,0 +1,166 @@
+.header {
+  /* position: sticky;
+  top: 0;
+  z-index: 50; */
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  display: flex;
+  padding: 0!important;
+  /* height: 4rem; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.desktopNav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+  }
+}
+
+.navLink,
+.navLinkActive {
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navLink {
+  color: var(--muted-foreground);
+}
+
+.navLinkActive {
+  color: var(--foreground);
+}
+
+.navLink:hover,
+.navLinkActive:hover {
+  color: var(--primary);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quoteButton {
+  display: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--primary-foreground);
+  background-color: var(--primary);
+  border: none;
+  border-radius: var(--radius);
+  transition: background-color 0.2s;
+}
+
+.quoteButton:hover {
+  background-color: var(--primary-hover);
+}
+
+@media (min-width: 768px) {
+  .quoteButton {
+    display: flex;
+  }
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--foreground);
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius);
+}
+
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  position: fixed;
+  inset: 4rem 0 0 0;
+  z-index: 40;
+  background-color: var(--background);
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.mobileNavLink {
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted-foreground);
+  transition: color 0.2s;
+}
+
+.mobileNavLink:hover {
+  color: var(--primary);
+}
+
+.mobileCta {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--primary-foreground);
+  background-color: var(--primary);
+  border: none;
+  border-radius: var(--radius);
+  transition: background-color 0.2s;
+}
+
+.mobileCta:hover {
+  background-color: var(--primary-hover);
+}
+
+@media (min-width: 768px) {
+  .mobileMenu {
+    display: none;
+  }
+}
+
