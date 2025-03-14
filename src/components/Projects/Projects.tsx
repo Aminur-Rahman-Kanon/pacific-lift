@@ -4,6 +4,7 @@ import p1 from '../../assets/images/others/o2.jpg';
 import p2 from '../../assets/images/others/o3.jpg';
 import p3 from '../../assets/images/others/o4.jpg';
 import p4 from '../../assets/images/others/o5.jpg';
+import { Link } from "react-router-dom";
 
 interface Project {
   id: number
@@ -56,7 +57,7 @@ const Projects: React.FC = () => {
         </div>
         <div className={styles.grid}>
           {projects.map((project) => (
-            <div key={project.id} className={styles.card}>
+            <Link to="/projects" key={project.id} className={styles.card}>
               <div className={styles.imageContainer}>
                 <img src={project.image || "/placeholder.svg"} alt={project.title} className={styles.image} />
               </div>
@@ -65,7 +66,7 @@ const Projects: React.FC = () => {
                 <h3 className={styles.cardTitle}>{project.title}</h3>
                 <p className={styles.cardDescription}>{project.description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className={styles.actions}>

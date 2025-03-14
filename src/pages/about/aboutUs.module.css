@@ -1,0 +1,984 @@
+/* Base Styles */
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Section Styles */
+/* section {
+  padding: 5rem 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+} */
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  height: 4px;
+  width: 70px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Hero Section */
+.heroSection {
+  height: 80vh;
+  min-height: 500px;
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80")
+    center / cover no-repeat;
+  /* margin-bottom: 0; */
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease 0.3s forwards;
+  opacity: 0;
+}
+
+/* .scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  animation: fadeInUp 1s ease 0.6s forwards, bounce 2s ease infinite 2s;
+  opacity: 0;
+} */
+
+.scrollArrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  margin-top: 0.5rem;
+}
+
+/* Story Section */
+.storySection {
+  background-color: white;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.storyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .storyContent {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.storyText {
+  flex: 1;
+  position: relative;
+}
+
+.storyText p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.foundedBadge {
+  display: inline-block;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foundedBadge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+}
+
+.storyImage {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.storyImage:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+}
+
+.storyImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.storyImage:hover img {
+  transform: scale(1.05);
+}
+
+/* Mission Section */
+.missionSection {
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.missionStatement {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.missionStatement::before,
+.missionStatement::after {
+  content: '"';
+  font-size: 4rem;
+  color: rgba(52, 152, 219, 0.2);
+  position: absolute;
+  line-height: 1;
+}
+
+.missionStatement::before {
+  top: -20px;
+  left: 0;
+}
+
+.missionStatement::after {
+  bottom: -40px;
+  right: 0;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .valuesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.valueCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valueCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.valueIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.valueCard h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.valueCard h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  border-radius: 2px;
+}
+
+.valueCard p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Achievements Section */
+.achievementsSection {
+  background-color: white;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .achievementsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.achievementCard {
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.achievementCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.achievementIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.achievementNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.achievementLabel {
+  color: #7f8c8d;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Team Section */
+.teamSection {
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 640px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .teamGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.teamCard {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.teamMemberImage {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.teamMemberImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.teamCard:hover .teamMemberImage img {
+  transform: scale(1.1);
+}
+
+.teamMemberOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+.teamCard:hover .teamMemberOverlay {
+  opacity: 1;
+}
+
+.teamMemberSocial {
+  display: flex;
+  gap: 1rem;
+}
+
+.teamMemberSocial a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3498db;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.teamMemberSocial a:hover {
+  transform: translateY(-5px);
+  background-color: #3498db;
+  color: white;
+}
+
+.socialIcon {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.teamMemberInfo {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.teamMemberInfo h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.position {
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.teamMemberInfo p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* Testimonials Section
+.testimonialsSection {
+  background-color: white;
+  max-width: 1200px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.testimonialSlider {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonialSlide {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.8s ease;
+  visibility: hidden;
+}
+
+.testimonialSlide.activeSlide {
+  opacity: 1;
+  position: relative;
+  visibility: visible;
+}
+
+.testimonialQuote {
+  position: relative;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.quoteMarks {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 5rem;
+  color: rgba(52, 152, 219, 0.2);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.testimonialQuote p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.testimonialAuthor img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 3px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialAuthor h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.testimonialAuthor p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.testimonialControls {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 3rem;
+}
+
+.testimonialDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 0;
+}
+
+.testimonialDot:hover {
+  transform: scale(1.2);
+}
+
+.testimonialDot.activeDot {
+  background-color: #3498db;
+  transform: scale(1.2);
+} */
+
+/* Locations Section */
+/* .locationsSection {
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.locationsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .locationsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.locationCard {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.locationCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.locationImage {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.locationImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.locationCard:hover .locationImage img {
+  transform: scale(1.1);
+}
+
+.locationOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 1.5rem;
+  color: white;
+}
+
+.locationOverlay h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.locationInfo {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+} */
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactIcon {
+  font-size: 1.2rem;
+}
+
+.contactInfo span {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.directionButton {
+  background-color: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.directionButton:hover {
+  background-color: #3498db;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.buttonIcon {
+  transition: transform 0.3s ease;
+}
+
+.directionButton:hover .buttonIcon {
+  transform: translateX(5px);
+}
+
+/* Contact Section */
+.contactSection {
+  position: relative;
+  padding: 5rem 1rem;
+  color: white;
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80")
+    center / cover no-repeat;
+  margin-top: 5rem;
+}
+
+.contactOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 62, 80, 0.85);
+  z-index: 1;
+}
+
+.contactContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contactSection p {
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .contactButtons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+}
+
+.primaryButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(52, 152, 219, 0.4);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondaryButton:hover {
+  background-color: white;
+  color: #2c3e50;
+  transform: translateY(-5px);
+}
+
+.primaryButton:hover .buttonIcon,
+.secondaryButton:hover .buttonIcon {
+  transform: translateX(5px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .storySection {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .missionSection {
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+
+  .missionStatement {
+    font-size: 1.1rem;
+  }
+
+  .achievementsSection {
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .achievementCard {
+    padding: 1rem;
+  }
+
+  .achievementNumber {
+    font-size: 2rem;
+  }
+
+  .teamSection {
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  /* .testimonialQuote p {
+    font-size: 1rem;
+  } */
+
+  .contactSection h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* section {
+    padding: 3rem 1rem;
+  } */
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.8rem;
+  }
+
+  .valueCard {
+    padding: 1.5rem;
+  }
+
+  .achievementCard {
+    padding: 10px;
+  }
+
+  .achievementNumber {
+    font-size: 1.8rem;
+  }
+
+  /* .testimonialQuote {
+    padding: 1.5rem;
+  }
+
+  .testimonialAuthor img {
+    width: 50px;
+    height: 50px;
+  } */
+
+  .contactSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+

@@ -2,7 +2,8 @@
 
 import type React from "react"
 import { useState, useContext } from "react"
-import { HashLink as Link } from "react-router-hash-link"
+import { NavLink } from 'react-router-dom';
+// import { HashLink as Link } from "react-router-hash-link"
 import styles from "./Header.module.css";
 import logo from '../../assets/images/logo/logo.png';
 import { ContextProvider, ContextType } from "../../hoc/context";
@@ -16,31 +17,31 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={`container ${styles.container}`}>
         <div className={styles.logo}>
-          <Link to="/" className={styles.logoLink}>
+          <a href="/" className={styles.logoLink}>
             <img src={logo} alt="pacific lift bd" className={styles.logoImg} />
-          </Link>
+          </a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className={styles.desktopNav}>
-          <Link to="#" className={styles.navLinkActive}>
+          <NavLink to="/" className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}>
             Home
-          </Link>
-          <Link to="#services" className={styles.navLink}>
+          </NavLink>
+          <NavLink to="/services" className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}>
             Services
-          </Link>
-          <Link to="#products" className={styles.navLink}>
+          </NavLink>
+          <NavLink to="/products" className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}>
             Products
-          </Link>
-          <Link to="#about" className={styles.navLink}>
+          </NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}>
             About Us
-          </Link>
-          <Link to="#projects" className={styles.navLink}>
+          </NavLink>
+          <NavLink to="/projects" className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}>
             Projects
-          </Link>
-          <Link to="#contact" className={styles.navLink}>
+          </NavLink>
+          <NavLink to="/contact" className={({ isActive }) => isActive ? styles.navLinkActive : styles.navLink}>
             Contact
-          </Link>
+          </NavLink>
         </nav>
 
         <div className={styles.actions}>
@@ -64,33 +65,6 @@ const Header: React.FC = () => {
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {/* {mobileMenuOpen && (
-        <div className={styles.mobileMenu}>
-          <nav className={styles.mobileNav}>
-            <Link to="#" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>
-              Home
-            </Link>
-            <Link to="#services" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>
-              Services
-            </Link>
-            <Link to="#products" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>
-              Products
-            </Link>
-            <Link to="#about" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>
-              About Us
-            </Link>
-            <Link to="#projects" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>
-              Projects
-            </Link>
-            <Link to="#contact" className={styles.mobileNavLink} onClick={() => setMobileMenuOpen(false)}>
-              Contact
-            </Link>
-            <button className={styles.mobileCta}>Get a Quote</button>
-          </nav>
-        </div>
-      )} */}
     </header>
   )
 }

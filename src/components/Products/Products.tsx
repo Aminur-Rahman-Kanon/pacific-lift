@@ -3,6 +3,7 @@ import styles from "./Products.module.css";
 import p1 from '../../assets/images/products/p1.jpg';
 import p2 from '../../assets/images/products/p2.jpg';
 import p3 from '../../assets/images/products/p3.jpg';
+import { Link } from "react-router-dom";
 
 interface Product {
   id: number
@@ -44,16 +45,16 @@ const Products: React.FC = () => {
         </div>
         <div className={styles.grid}>
           {products.map((product) => (
-            <div key={product.id} className={styles.card}>
+            <Link key={product.id} to={'/products'} className={styles.card}>
               <div className={styles.imageContainer}>
                 <img src={product.image || "/placeholder.svg"} alt={product.title} className={styles.image} />
               </div>
               <div className={styles.content}>
                 <h3 className={styles.cardTitle}>{product.title}</h3>
                 <p className={styles.cardDescription}>{product.description}</p>
-                <button className={styles.button}>Learn More</button>
+                <div className={styles.button}>Learn More</div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

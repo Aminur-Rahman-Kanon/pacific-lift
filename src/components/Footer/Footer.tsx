@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               Elevating standards in vertical transportation with innovative solutions for all your elevator needs.
             </p>
             <div className={styles.socialLinks}>
-              <a href="#" className={styles.socialLink} aria-label="Facebook">
+              <a href="https://www.facebook.com/pacificlift" target="_blank" className={styles.socialLink} aria-label="Facebook">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"

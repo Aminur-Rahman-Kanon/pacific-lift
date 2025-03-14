@@ -1,6 +1,7 @@
 import type React from "react"
 import styles from './About.module.css';
 import about from '../../assets/images/others/o1.jpg';
+import { Link } from "react-router-dom";
 
 interface Stat {
   id: number
@@ -50,8 +51,8 @@ const About: React.FC = () => {
               meets the highest standards of performance and reliability.
             </p>
             <div className={styles.buttons}>
-              <button className={styles.primaryButton}>Our Story</button>
-              <button className={styles.secondaryButton}>Meet Our Team</button>
+              <Link to="/about" className={styles.primaryButton}>Our Story</Link>
+              <Link to="/about" className={styles.secondaryButton}>Meet Our Team</Link>
             </div>
           </div>
           <div className={styles.imageContainer}>

@@ -21,26 +21,26 @@ const Sidedrawer = ():React.JSX.Element => {
             </div>
             <ul className={styles.nav}>
                 <li>
-                    <a href='#' className={styles.navLink}>Home</a> 
+                    <a href='/' className={styles.navLink}>Home</a> 
                 </li>
                 <li>
-                    <a href='#' className={styles.navLink}>Services</a> 
+                    <a href='/services' className={styles.navLink}>Services</a> 
                 </li>
                 <li>
-                    <a href='#' className={styles.navLink}>Products</a> 
+                    <a href='/products' className={styles.navLink}>Products</a> 
                 </li>
                 <li>
-                    <a href='#' className={styles.navLink}>About Us</a> 
+                    <a href='/about' className={styles.navLink}>About Us</a> 
                 </li>
                 <li>
-                    <a href='#' className={styles.navLink}>Projects</a> 
+                    <a href='/projects' className={styles.navLink}>Projects</a> 
                 </li>
                 <li>
-                    <a href='#' className={styles.navLink}>Contact</a> 
+                    <a href='/contact' className={styles.navLink}>Contact</a> 
                 </li>
             </ul>
             <div className={styles.links}>
-                <a href="#" className={styles.socialLink} aria-label="Facebook">
+                <a href="https://www.facebook.com/pacificlift" target='_blank' className={styles.socialLink} aria-label="Facebook">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
